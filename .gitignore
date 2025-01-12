@@ -1,0 +1,37 @@
+# Exclure les dossiers générés par Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Ll]ogs/
+MemoryCaptures/
+UserSettings/
+
+# Exclure les fichiers de configuration spécifiques à Unity
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Unity
+Library/
+Temp/
+Obj/
+.vs/
+.idea/
+.userprefs
+
+
+# Exclure les fichiers volumineux du cache des packages
+PackageCache/
+.codegpt
