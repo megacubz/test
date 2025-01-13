@@ -7,16 +7,20 @@ public class plateformequibouge : MonoBehaviour
     public GameObject ennmis; // La plateforme
     public GameObject ally;   // Le personnage à suivre
 
-    public float speed; // Vitesse de déplacement de la plateforme
+    public float speed; // Vitesse de la plateforme
 
-    // Update est appelé à chaque frame
+    void Start (){
+
+    }
+
+    // Update is called once per frame
     void Update()
     {
         // Récupérer la position actuelle de la plateforme et du personnage
         Vector3 currentPlatformPosition = ennmis.transform.position;
         Vector3 targetPosition = ally.transform.position;
 
-        // Ne suivre que sur l'axe X, garder l'axe Y constant
+        // Ne suivre que sur l'axe X
         Vector3 newPosition = Vector3.MoveTowards(
             currentPlatformPosition,
             new Vector3(targetPosition.x, currentPlatformPosition.y, currentPlatformPosition.z),
@@ -27,3 +31,4 @@ public class plateformequibouge : MonoBehaviour
         ennmis.transform.position = newPosition;
     }
 }
+

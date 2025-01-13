@@ -5,10 +5,10 @@ using UnityEngine;
 public class chasing : MonoBehaviour
 {
 
-    public GameObject ennmis;
-    public GameObject ally;
+    public GameObject ennmis; //l'ennemi qui chasse
+    public GameObject ally; //le joueur chassé
 
-    public float speed;
+    public float speed; //la vitesse
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +18,8 @@ public class chasing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ennmis.transform.position = Vector3.MoveTowards(ennmis.transform.position,ally.transform.position,speed);
+        ennmis.transform.position = Vector3.MoveTowards(ennmis.transform.position,ally.transform.position,speed); //déplacement vers le joueur
     }
 }
+
+
