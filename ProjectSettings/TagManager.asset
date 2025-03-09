@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - trou
+  - Danger
+  - SpawnPoint
   layers:
   - Default
   - TransparentFX
@@ -11,14 +14,14 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - joueur 1
+  - joueur 2
+  - tilejoueur 1
+  - tilejoueur 2
+  - visibleparjoueur 1
+  - visibleparjoueur 2
+  - camjoueur2
+  - camjoueur1
   - 
   - 
   - 
@@ -55,4 +58,7 @@ TagManager:
     locked: 0
   - name: 4for
     uniqueID: 733012669
+    locked: 0
+  - name: tout devant
+    uniqueID: 864069133
     locked: 0
